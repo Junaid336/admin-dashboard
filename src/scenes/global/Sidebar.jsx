@@ -46,7 +46,7 @@ const Sidebar = () => {
       sx={{
         "& .pro-sidebar-inner": {
           background: `${colors.primary[400]} !important`,
-          position: 'fixed'
+          position: isCollapsed ? 'static' : 'fixed'
         },
         "& .pro-icon-wrapper": {
           backgroundColor: "transparent !important",
